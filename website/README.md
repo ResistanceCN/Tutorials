@@ -9,6 +9,7 @@
 
 ## 二、功能介绍
 
-## 三、[Markdown 简易教程](./Markdown 简易教程.md)
+## 三、Markdown简易教程
+[教程链接](./Markdown简易教程.md)
 
 ## 四、控制台管理
