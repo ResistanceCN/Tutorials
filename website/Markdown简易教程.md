@@ -193,7 +193,7 @@ Mike |  32
 
 ### 代码
 
-行内代码： <code>`yarn add showdown`</code>
+行内代码：``` `yarn add showdown` ```
 
 代码块：
 <pre><code>```C++
@@ -206,9 +206,9 @@ fun main() {
 
 ### ASCIIMath 公式
 
-<pre><code>```asciimath
+```asciimath
 %x = (-b +- sqrt(b^2 - 4ac)) / (2a)%
-```</code></pre>
+```
 
 效果：
 %x = (-b +- sqrt(b^2 - 4ac)) / (2a)%
