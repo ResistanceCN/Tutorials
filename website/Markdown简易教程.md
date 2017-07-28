@@ -21,8 +21,11 @@
 
 ```markdown
 # 一级标题
+
 ## 二级标题
+
 ### 三级标题
+
 普通段落
 ```
 
@@ -62,13 +65,15 @@
 
 ![Panda](http://img.blog.csdn.net/20151109165400641 =200x*)
 
+注意：指定图片尺寸不是标准 Markdown 的行为，大多数平台 (包括 GitHub) 都不支持指定图片尺寸。
+
 ### 链接
 
 ```markdown
 [链接文字](https://xxx)
 ```
 
-效果：[链接文字](javascript:alert('xsstest!'))
+效果：[链接文字](https://xxx)
 
 ### 引用
 
@@ -89,16 +94,20 @@
 
 效果：
 
+<!-- 編輯者請注意 -->
+<!-- 此處效果演示所用的代碼，在引用塊內空行處也補上了 > 符號，因 GitHub Markdown 之渲染行爲不同也。 -->
+<!-- 於網站內仍應遵守源代碼示例之格式。 -->
+
 > 天祥臨刑從容。南向拜而死，年四十七。
-
+>
 > 其絶筆曰：
-
+>
 > > 孔曰成仁，孟云取義；
-
+> >
 > > 惟其義盡，所以仁至。
-
+> >
 > > 讀聖賢書，所學何事；
-
+> >
 > > 而今而後，庶幾無愧！
 
 ### 列表
@@ -193,10 +202,10 @@ Mike |  32
 
 ### 代码
 
-行内代码：``` `yarn add showdown` ```
+行内代码： <code>\`yarn add showdown\`</code>
 
 代码块：
-<pre><code>```C++
+<pre><code>```
 fun main() {
     println("Hello World!")
 }
@@ -233,3 +242,5 @@ $$
 $$
 f(x;\mu,\sigma^2) = \frac{1}{\sigma\sqrt{2\pi}} e^{ -\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2 } \tag{1}
 $$
+
+注意：LaTeX 和 ASCIIMath 公式不是标准 Markdown 的行为。少部分平台 (包括 GitHub) 不支持 LaTeX 公式；大多数平台 (包括 GitHub) 都不支持 ASCIIMath 公式。
