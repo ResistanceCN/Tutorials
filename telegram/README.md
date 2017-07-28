@@ -4,11 +4,44 @@
 
 ## 一、什么是 Telegram
 
+Telegram (在保留原名以消歧，下同)是一个专注于速度和安全性的即时通讯(Instant Messaging)程序，它快速、简单而且免费，拥有多平台兼容性和丰富的 API 接口，目前全球已经超过四亿人在使用。
+
 ## 二、为什么使用 Telegram
 
 ## 三、Telegram 基础
 
 ### 1.下载
+
+#### 官方客户端
+> 下载总览：https://telegram.org/apps
+
+##### 电脑：
+
+- Windows:
+
+- macOS:
+
+- Linux:
+
+##### 手机：
+
+- [Android](https://play.google.com/store/apps/details?id=org.telegram.messenger)
+
+- [iOS](https://itunes.apple.com/app/telegram-messenger/id686449807)
+
+- [Windows Phone](https://www.microsoft.com/ug-cn/store/p/telegram-messenger/9wzdncrdzhs0?rtc=1) (可用性未知*)
+
+##### 网页：
+
+- [Website](https://telegram.org/dl/webogram)
+*暂不推荐其他非官方组织搭建的反向代理服务*
+
+#### 第三方客户端
+
+- [Plus Messenger](http://plusmessenger.org/)
+
+- [telegram beta](https://t.co/PjOdS0Udyu)
+*暂且算作第三方客户端，目前仅支持 Android，请在安装普通客户端之后通过频道获取*
 
 ### 2.账户设置
 
@@ -33,3 +66,5 @@
 ## 五、机器人
 
 ## 六、安全
+
+## 七、还有这种操作？
