@@ -17,11 +17,12 @@ Telegram (在保留原名以消歧，下同)是一个专注于速度和安全性
 
 ##### 电脑：
 
-- Windows:
+- [Windows](https://telegram.org/dl/desktop/win)
 
-- macOS:
+- [macOS](https://telegram.org/dl/desktop/mac)
 
-- Linux:
+- Linux([32 bit](https://telegram.org/dl/desktop/linux32) / [64 bit](https://telegram.org/dl/desktop/linux))
+    *针对不同的发行版本其源内的包名可能也会有不同，可自行搜索*
 
 ##### 手机：
 
