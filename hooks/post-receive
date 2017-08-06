@@ -1,6 +1,9 @@
 #!/bin/sh
-unset GIT_DIR
-DeployPath=/srv/Tutorials
-cd $DeployPath
-git add . -A && git stash
-git pull origin master
+unset GIT_DIR 
+DIR_ONE=/srv/Tutorials/ 
+cd $DIR_ONE
+sudo git init
+sudo git remote add origin /srv/Tutorials/
+sudo git clean -df
+sudo git pull origin master
+sudo systemctl restart mkdocs
