@@ -5,5 +5,5 @@ pages:
     - Telegram: telegram/README.md
     - Website: website/README.md
 docs_dir: '/srv/Tutorials/docs/'
-theme_dir: '/srv/Tutorials/mkdocs-material/material'
+theme_dir: '/srv/Tutorials/mkdocs-material-1.8.0/material'
 
