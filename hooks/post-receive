@@ -1,0 +1,6 @@
+#!/bin/sh
+unset GIT_DIR
+DeployPath=/srv/Tutorials
+cd $DeployPath
+git add . -A && git stash
+git pull origin master
