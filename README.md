@@ -4,9 +4,9 @@
 
 **教程根据现有结构分为四大板块：**
 - [入门总述](./README.md)
-- [Ingress 玩法](./ingress/README.md)
-- [Telegram用法](./telegram/README.md)
-- [网站用法](./website/README.md)
+- [Ingress 玩法](../docs/ingress/README.md)
+- [Telegram用法](./docs/telegram/README.md)
+- [网站用法](./docs/website/README.md)
 
 ---
 
