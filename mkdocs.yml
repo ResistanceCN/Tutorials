@@ -1,0 +1,9 @@
+site_name: Cantonres Tutorials
+pages:
+    - Home: README.md
+    - Ingress: ingress/README.md
+    - Telegram: telegram/README.md
+    - Website: website/README.md
+docs_dir: '/srv/Tutorials/docs/'
+theme_dir: '/srv/Tutorials/mkdocs-material/material'
+
