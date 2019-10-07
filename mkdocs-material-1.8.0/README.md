@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Material for MkDocs](#material-for-mkdocs)
+  - [Quick start](#quick-start)
+  - [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 [![Travis][travis-image]][travis-link]
 [![Gitter][gitter-image]][gitter-link]
 [![Codacy][codacy-image]][codacy-link]

@@ -1,3 +1,23 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Customization](#customization)
+  - [A great starting point](#a-great-starting-point)
+  - [Adding assets](#adding-assets)
+    - [Additional stylesheets](#additional-stylesheets)
+    - [Additional JavaScript](#additional-javascript)
+  - [Extending the theme](#extending-the-theme)
+    - [Setup and theme structure](#setup-and-theme-structure)
+    - [Overriding partials](#overriding-partials)
+    - [Overriding template blocks](#overriding-template-blocks)
+  - [Theme development](#theme-development)
+    - [Environment setup](#environment-setup)
+    - [Development mode](#development-mode)
+    - [Build process](#build-process)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Customization
 
 ## A great starting point

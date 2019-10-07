@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Metadata](#metadata)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Overriding the title](#overriding-the-title)
+    - [Overriding the description](#overriding-the-description)
+    - [Linking sources](#linking-sources)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 path: tree/master/docs/extensions
 source: metadata.md
 

@@ -1,10 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [ingress ICE 教程](#ingress-ice-%E6%95%99%E7%A8%8B)
+  - [简介](#%E7%AE%80%E4%BB%8B)
+  - [Linux 桌面用户](#linux-%E6%A1%8C%E9%9D%A2%E7%94%A8%E6%88%B7)
+    - [1. PhantomJS](#1-phantomjs)
+    - [2. Ingress ICE](#2-ingress-ice)
+    - [3. 脚本使用](#3-%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8)
+      - [3.1 准备](#31-%E5%87%86%E5%A4%87)
+      - [3.2 配置](#32-%E9%85%8D%E7%BD%AE)
+      - [3.3 启动](#33-%E5%90%AF%E5%8A%A8)
+    - [4. GIF 或视频制作](#4-gif-%E6%88%96%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C)
+  - [Windows 用户](#windows-%E7%94%A8%E6%88%B7)
+  - [MacOS 用户](#macos-%E7%94%A8%E6%88%B7)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # ingress ICE 教程
 
 [TOC]
 
 ## 简介
 
-> Automatic screenshooter for ingress intel map.
+> matic screenshooter for ingress intel map.
 
 > Intel 地图自动截图脚本：
 [Ingress ICE](https://github.com/sndirsch/ingress-ice)
@@ -20,11 +39,15 @@ Ingress-ICE 是一个能够利用 PhantomJS“浏览器”加载 Intel 地图并
 
 ## Linux 桌面用户
 
-### 1. [PhantomJS 下载](https://phantomjs.org/download.html)
+### 1. PhantomJS
+
+[PhantomJS 下载](https://phantomjs.org/download.html)
 
 为了方便起见，可以直接从官方网站下载二进制包并解压。
 
-### 2. [Ingress ICE 下载](https://github.com/sndirsch/ingress-ice.git)
+### 2. Ingress ICE
+
+[Ingress ICE 下载](https://github.com/sndirsch/ingress-ice.git)
 
 可以直接从项目拉取：
 
@@ -187,7 +210,7 @@ Options:
     -c <count>   Take <count> screenshots 设置所需截图
     -i <file>    Read settings from <file> or create config if not exists 读取指定配置文件
     -o           Delete old config and configure ice from scratch 删除配置文件
-    -s           Run Ingress ICE in an endless loop (it will restart automatically after an error) 如果脚本执行过程中崩溃，自动重新开始
+    -s           Run Ingress ICE in an endless loop (it will restart matically after an error) 如果脚本执行过程中崩溃，自动重新开始
 
     Please visit https://ingress.netlify.com/ for more information
 ```

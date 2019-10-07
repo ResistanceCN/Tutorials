@@ -1,3 +1,43 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [CodeHilite](#codehilite)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Specifying the language](#specifying-the-language)
+      - [via Markdown syntax <small>recommended</small>](#via-markdown-syntax-smallrecommendedsmall)
+      - [via Shebang](#via-shebang)
+      - [via three colons](#via-three-colons)
+    - [Adding line numbers](#adding-line-numbers)
+    - [Highlighting specific lines](#highlighting-specific-lines)
+  - [Supported languages <small>excerpt</small>](#supported-languages-smallexcerptsmall)
+    - [Bash](#bash)
+    - [C](#c)
+    - [C++](#c)
+    - [C&#35;](#c35)
+    - [Clojure](#clojure)
+    - [Diff](#diff)
+    - [Docker](#docker)
+    - [Elixir](#elixir)
+    - [Erlang](#erlang)
+    - [F&#35;](#f35)
+    - [Go](#go)
+    - [HTML](#html)
+    - [Java](#java)
+    - [JavaScript](#javascript)
+    - [JSON](#json)
+    - [Julia](#julia)
+    - [Lua](#lua)
+    - [MySQL](#mysql)
+    - [PHP](#php)
+    - [Protocol Buffers](#protocol-buffers)
+    - [Python](#python)
+    - [Ruby](#ruby)
+    - [XML](#xml)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # CodeHilite
 
 [CodeHilite][1] is an extension that adds syntax highlighting to code blocks

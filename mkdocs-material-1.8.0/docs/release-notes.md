@@ -1,3 +1,52 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Release notes](#release-notes)
+  - [Upgrading](#upgrading)
+  - [Changelog](#changelog)
+    - [1.8.0 <small> _ August 2, 2017</small>](#180-small-_-august-2-2017small)
+    - [1.7.5 <small> _ July 25, 2017</small>](#175-small-_-july-25-2017small)
+    - [1.7.4 <small> _ June 21, 2017</small>](#174-small-_-june-21-2017small)
+    - [1.7.3 <small> _ June 7, 2017</small>](#173-small-_-june-7-2017small)
+    - [1.7.2 <small> _ June 6, 2017</small>](#172-small-_-june-6-2017small)
+    - [1.7.1 <small> _ June 1, 2017</small>](#171-small-_-june-1-2017small)
+    - [1.7.0 <small> _ June 1, 2017</small>](#170-small-_-june-1-2017small)
+    - [1.6.4 <small> _ May 24, 2017</small>](#164-small-_-may-24-2017small)
+    - [1.6.3 <small> _ May 16, 2017</small>](#163-small-_-may-16-2017small)
+    - [1.6.2 <small> _ May 15, 2017</small>](#162-small-_-may-15-2017small)
+    - [1.6.1 <small> _ April 23, 2017</small>](#161-small-_-april-23-2017small)
+    - [1.6.0 <small> _ April 22, 2017</small>](#160-small-_-april-22-2017small)
+    - [1.5.5 <small> _ April 20, 2017</small>](#155-small-_-april-20-2017small)
+    - [1.5.4 <small> _ April 8, 2017</small>](#154-small-_-april-8-2017small)
+    - [1.5.3 <small> _ April 7, 2017</small>](#153-small-_-april-7-2017small)
+    - [1.5.2 <small> _ April 5, 2017</small>](#152-small-_-april-5-2017small)
+    - [1.5.1 <small> _ March 30, 2017</small>](#151-small-_-march-30-2017small)
+    - [1.5.0 <small> _ March 24, 2017</small>](#150-small-_-march-24-2017small)
+    - [1.4.1 <small> _ March 16, 2017</small>](#141-small-_-march-16-2017small)
+    - [1.4.0 <small> _ March 16, 2017</small>](#140-small-_-march-16-2017small)
+    - [1.3.0 <small> _ March 11, 2017</small>](#130-small-_-march-11-2017small)
+    - [1.2.0 <small> _ March 3, 2017</small>](#120-small-_-march-3-2017small)
+    - [1.1.1 <small> _ February 26, 2017</small>](#111-small-_-february-26-2017small)
+    - [1.1.0 <small> _ February 26, 2017</small>](#110-small-_-february-26-2017small)
+    - [1.0.5 <small> _ February 18, 2017</small>](#105-small-_-february-18-2017small)
+    - [1.0.4 <small> _ February 16, 2017</small>](#104-small-_-february-16-2017small)
+    - [1.0.3 <small> _ January 22, 2017</small>](#103-small-_-january-22-2017small)
+    - [1.0.2 <small> _ January 15, 2017</small>](#102-small-_-january-15-2017small)
+    - [1.0.1 <small> _ January 14, 2017</small>](#101-small-_-january-14-2017small)
+    - [1.0.0 <small> _ January 13, 2017</small>](#100-small-_-january-13-2017small)
+    - [0.2.4 <small> _ June 26, 2016</small>](#024-small-_-june-26-2016small)
+    - [0.2.3 <small> _ May 16, 2016</small>](#023-small-_-may-16-2016small)
+    - [0.2.2 <small> _ March 20, 2016</small>](#022-small-_-march-20-2016small)
+    - [0.2.1 <small> _ March 12, 2016</small>](#021-small-_-march-12-2016small)
+    - [0.2.0 <small> _ February 24, 2016</small>](#020-small-_-february-24-2016small)
+    - [0.1.3 <small> _ February 21, 2016</small>](#013-small-_-february-21-2016small)
+    - [0.1.2 <small> _ February 16, 2016</small>](#012-small-_-february-16-2016small)
+    - [0.1.1 <small> _ February 11, 2016</small>](#011-small-_-february-11-2016small)
+    - [0.1.0 <small> _ February 9, 2016</small>](#010-small-_-february-9-2016small)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Release notes
 
 ## Upgrading

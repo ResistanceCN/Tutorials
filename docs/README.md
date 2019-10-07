@@ -1,3 +1,16 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [欢迎来到教程总述](#%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E6%95%99%E7%A8%8B%E6%80%BB%E8%BF%B0)
+  - [入门总述](#%E5%85%A5%E9%97%A8%E6%80%BB%E8%BF%B0)
+    - [一、我该如何找到组织](#%E4%B8%80%E6%88%91%E8%AF%A5%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E7%BB%84%E7%BB%87)
+    - [二、为什么要填表](#%E4%BA%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%A1%AB%E8%A1%A8)
+    - [三、怎么填表](#%E4%B8%89%E6%80%8E%E4%B9%88%E5%A1%AB%E8%A1%A8)
+    - [四、填表之后](#%E5%9B%9B%E5%A1%AB%E8%A1%A8%E4%B9%8B%E5%90%8E)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # 欢迎来到教程总述
 
 ---

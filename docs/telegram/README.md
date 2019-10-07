@@ -1,3 +1,33 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Telegram 总述](#telegram-%E6%80%BB%E8%BF%B0)
+  - [一、什么是 Telegram](#%E4%B8%80%E4%BB%80%E4%B9%88%E6%98%AF-telegram)
+  - [二、为什么使用 Telegram](#%E4%BA%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8-telegram)
+  - [三、Telegram 基础](#%E4%B8%89telegram-%E5%9F%BA%E7%A1%80)
+    - [1.下载](#1%E4%B8%8B%E8%BD%BD)
+      - [官方客户端](#%E5%AE%98%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF)
+        - [电脑：](#%E7%94%B5%E8%84%91)
+        - [手机：](#%E6%89%8B%E6%9C%BA)
+        - [网页：](#%E7%BD%91%E9%A1%B5)
+      - [第三方客户端](#%E7%AC%AC%E4%B8%89%E6%96%B9%E5%AE%A2%E6%88%B7%E7%AB%AF)
+    - [2.账户设置](#2%E8%B4%A6%E6%88%B7%E8%AE%BE%E7%BD%AE)
+    - [3.私人聊天](#3%E7%A7%81%E4%BA%BA%E8%81%8A%E5%A4%A9)
+    - [4.寻找好友](#4%E5%AF%BB%E6%89%BE%E5%A5%BD%E5%8F%8B)
+  - [四、群、超级群、频道](#%E5%9B%9B%E7%BE%A4%E8%B6%85%E7%BA%A7%E7%BE%A4%E9%A2%91%E9%81%93)
+    - [1.三者基本介绍](#1%E4%B8%89%E8%80%85%E5%9F%BA%E6%9C%AC%E4%BB%8B%E7%BB%8D)
+    - [2.如何加群](#2%E5%A6%82%E4%BD%95%E5%8A%A0%E7%BE%A4)
+    - [3.如何创建群组](#3%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E7%BE%A4%E7%BB%84)
+    - [4.如何创建频道](#4%E5%A6%82%E4%BD%95%E5%88%9B%E5%BB%BA%E9%A2%91%E9%81%93)
+    - [5.群组管理](#5%E7%BE%A4%E7%BB%84%E7%AE%A1%E7%90%86)
+    - [6.频道管理](#6%E9%A2%91%E9%81%93%E7%AE%A1%E7%90%86)
+  - [五、机器人](#%E4%BA%94%E6%9C%BA%E5%99%A8%E4%BA%BA)
+  - [六、安全](#%E5%85%AD%E5%AE%89%E5%85%A8)
+  - [七、还有这种操作？](#%E4%B8%83%E8%BF%98%E6%9C%89%E8%BF%99%E7%A7%8D%E6%93%8D%E4%BD%9C)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Telegram 总述
 
 > 教程基于：https://telegram.org/faq ，意在为新玩家提供基本的 IM 使用帮助，如有错漏还望告知。

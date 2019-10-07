@@ -1,3 +1,37 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Getting started](#getting-started)
+  - [Installation](#installation)
+    - [Installing MkDocs](#installing-mkdocs)
+    - [Installing Material](#installing-material)
+      - [using pip](#using-pip)
+      - [using choco](#using-choco)
+      - [cloning from GitHub](#cloning-from-github)
+    - [Troubleshooting](#troubleshooting)
+  - [Usage](#usage)
+  - [Options](#options)
+    - [Changing the color palette](#changing-the-color-palette)
+      - [Primary colors](#primary-colors)
+      - [Accent colors](#accent-colors)
+    - [Changing the font family](#changing-the-font-family)
+    - [Adding a source repository](#adding-a-source-repository)
+    - [Adding a favicon](#adding-a-favicon)
+    - [Adding a logo](#adding-a-logo)
+    - [Adding social links](#adding-social-links)
+    - [Google Analytics integration](#google-analytics-integration)
+    - [Disqus integation](#disqus-integation)
+    - [Localization](#localization)
+      - [Translations](#translations)
+      - [Site search](#site-search)
+    - [Tabs](#tabs)
+    - [More advanced customization](#more-advanced-customization)
+  - [Extensions](#extensions)
+  - [Full example](#full-example)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Getting started
 
 ## Installation

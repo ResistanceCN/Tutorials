@@ -1,3 +1,29 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [PyMdown Extensions](#pymdown-extensions)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [GitHub Flavored Markdown](#github-flavored-markdown)
+      - [BetterEm](#betterem)
+      - [Emoji](#emoji)
+      - [MagicLink](#magiclink)
+      - [SuperFences](#superfences)
+      - [Tasklist](#tasklist)
+      - [Tilde](#tilde)
+    - [More syntactic sugar](#more-syntactic-sugar)
+      - [Caret](#caret)
+      - [Mark](#mark)
+      - [SmartSymbols](#smartsymbols)
+      - [Critic](#critic)
+    - [Arithmatex <small>MathJax</small>](#arithmatex-smallmathjaxsmall)
+      - [Blocks](#blocks)
+      - [Inline](#inline)
+    - [InlineHilite](#inlinehilite)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # PyMdown Extensions
 
 [PyMdown Extensions][1] is a collection of Markdown extensions that add some

@@ -1,3 +1,34 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Specimen](#specimen)
+  - [Body copy](#body-copy)
+  - [Headings](#headings)
+    - [The 3rd level](#the-3rd-level)
+      - [The 4th level](#the-4th-level)
+        - [The 5th level](#the-5th-level)
+          - [The 6th level](#the-6th-level)
+  - [Headings <small>with secondary text</small>](#headings-smallwith-secondary-textsmall)
+    - [The 3rd level <small>with secondary text</small>](#the-3rd-level-smallwith-secondary-textsmall)
+      - [The 4th level <small>with secondary text</small>](#the-4th-level-smallwith-secondary-textsmall)
+        - [The 5th level <small>with secondary text</small>](#the-5th-level-smallwith-secondary-textsmall)
+          - [The 6th level <small>with secondary text</small>](#the-6th-level-smallwith-secondary-textsmall)
+  - [Blockquotes](#blockquotes)
+    - [Blockquote nesting](#blockquote-nesting)
+    - [Other content blocks](#other-content-blocks)
+  - [Lists](#lists)
+    - [Unordered lists](#unordered-lists)
+    - [Ordered lists](#ordered-lists)
+    - [Definition lists](#definition-lists)
+  - [Code blocks](#code-blocks)
+    - [Inline](#inline)
+    - [Listing](#listing)
+  - [Horizontal rules](#horizontal-rules)
+  - [Data tables](#data-tables)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Specimen
 
 ## Body copy

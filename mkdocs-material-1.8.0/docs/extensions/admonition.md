@@ -1,3 +1,26 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Admonition](#admonition)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Changing the title](#changing-the-title)
+    - [Removing the title](#removing-the-title)
+    - [Embedded code blocks](#embedded-code-blocks)
+  - [Types](#types)
+    - [Note](#note)
+    - [Summary](#summary)
+    - [Tip](#tip)
+    - [Success](#success)
+    - [Warning](#warning)
+    - [Failure](#failure)
+    - [Danger](#danger)
+    - [Bug](#bug)
+    - [Quote](#quote)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Admonition
 
 [Admonition][1] is an extension included in the standard Markdown library that
