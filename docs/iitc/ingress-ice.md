@@ -2,18 +2,26 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [ingress ICE 教程](#ingress-ice-%E6%95%99%E7%A8%8B)
-  - [简介](#%E7%AE%80%E4%BB%8B)
-  - [Linux 桌面用户](#linux-%E6%A1%8C%E9%9D%A2%E7%94%A8%E6%88%B7)
-    - [1. PhantomJS](#1-phantomjs)
-    - [2. Ingress ICE](#2-ingress-ice)
-    - [3. 脚本使用](#3-%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8)
-      - [3.1 准备](#31-%E5%87%86%E5%A4%87)
-      - [3.2 配置](#32-%E9%85%8D%E7%BD%AE)
-      - [3.3 启动](#33-%E5%90%AF%E5%8A%A8)
-    - [4. GIF 或视频制作](#4-gif-%E6%88%96%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C)
-  - [Windows 用户](#windows-%E7%94%A8%E6%88%B7)
-  - [MacOS 用户](#macos-%E7%94%A8%E6%88%B7)
+- [ingress ICE 教程](#ingress-ice-%e6%95%99%e7%a8%8b)
+  - [简介](#%e7%ae%80%e4%bb%8b)
+  - [文件准备](#%e6%96%87%e4%bb%b6%e5%87%86%e5%a4%87)
+    - [1. Ingress ICE](#1-ingress-ice)
+    - [2. PhantomJS](#2-phantomjs)
+  - [Linux 桌面用户](#linux-%e6%a1%8c%e9%9d%a2%e7%94%a8%e6%88%b7)
+    - [1. 脚本使用](#1-%e8%84%9a%e6%9c%ac%e4%bd%bf%e7%94%a8)
+      - [1.1 准备](#11-%e5%87%86%e5%a4%87)
+      - [1.2 配置](#12-%e9%85%8d%e7%bd%ae)
+      - [1.3 启动](#13-%e5%90%af%e5%8a%a8)
+    - [2. GIF 或视频制作](#2-gif-%e6%88%96%e8%a7%86%e9%a2%91%e5%88%b6%e4%bd%9c)
+  - [Windows 用户](#windows-%e7%94%a8%e6%88%b7)
+    - [1. 脚本使用](#1-%e8%84%9a%e6%9c%ac%e4%bd%bf%e7%94%a8-1)
+      - [1.1 准备](#11-%e5%87%86%e5%a4%87-1)
+      - [1.2 配置](#12-%e9%85%8d%e7%bd%ae-1)
+      - [1.3 启动](#13-%e5%90%af%e5%8a%a8-1)
+    - [2. GIF 或视频制作](#2-gif-%e6%88%96%e8%a7%86%e9%a2%91%e5%88%b6%e4%bd%9c-1)
+  - [MacOS 用户](#macos-%e7%94%a8%e6%88%b7)
+  - [配置说明](#%e9%85%8d%e7%bd%ae%e8%af%b4%e6%98%8e)
+    - [从浏览器获取 Cookies 信息](#%e4%bb%8e%e6%b5%8f%e8%a7%88%e5%99%a8%e8%8e%b7%e5%8f%96-cookies-%e4%bf%a1%e6%81%af)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -37,30 +45,36 @@ Ingress-ICE 是一个能够利用 PhantomJS“浏览器”加载 Intel 地图并
 - [WikiPedia: PhantomJS](https://en.wikipedia.org/wiki/PhantomJS)
 - [WikiPedia: Webkit](https://en.wikipedia.org/wiki/Webkit)
 
-## Linux 桌面用户
+## 文件准备
 
-### 1. PhantomJS
+### 1. Ingress ICE
 
-[PhantomJS 下载](https://phantomjs.org/download.html)
+直接从 Releases 下载源码包：
 
-为了方便起见，可以直接从官方网站下载二进制包并解压。
+https://github.com/sndirsch/ingress-ice/archive/v4.5.6.tar.gz
 
-### 2. Ingress ICE
 
-[Ingress ICE 下载](https://github.com/sndirsch/ingress-ice.git)
-
-可以直接从项目拉取：
+熟悉 Git 的也可以去 [Ingress ICE 项目页面下载](https://github.com/sndirsch/ingress-ice.git)，或直接从项目拉取：
 
 ```bash
 $ git clone https://github.com/sndirsch/ingress-ice.git
 ```
-或者从 Releases 下载源码包：
 
-https://github.com/sndirsch/ingress-ice/archive/v4.5.6.tar.gz
+下载后随便解压到你方便的目录，得到 `ingress-ice-4.5.6` 文件夹。
 
-### 3. 脚本使用
+### 2. PhantomJS
 
-#### 3.1 准备
+方便起见，直接从官方网站下载对应系统平台二进制包并解压。
+
+[PhantomJS 下载](https://phantomjs.org/download.html)
+
+也可以用各种包管理工具安装。
+
+## Linux 桌面用户
+
+### 1. 脚本使用
+
+#### 1.1 准备
 
 `ingress-ice.sh` 这个 `Shell Script` 在其中默认[（~~简单粗暴地~~）](https://github.com/sndirsch/ingress-ice/blob/9223d4f14de539ef3af1b11559e4d5d5382a9c85/ingress-ice.sh#L11)定义了 `SCRIPT_HOME` 作为 `PhantomJS` 二进制可执行文件的所在目录，且不会去寻找系统 `$PATH` 中的 `PhantomJS`。如有需要的话建议直接修改其脚本内容，并关闭 `忽略 SSL 安全错误` 的选项。无，则将下载到的压缩包解压到该项目文件目录即可。
 
@@ -107,7 +121,7 @@ $ phantomjs --help | rg proxyd
 --proxy-type=<val>                   Specifies the proxy type, 'http' (default), 'none' (disable completely), or 'socks5'
 ```
 
-#### 3.2 配置
+#### 1.2 配置
 
 确保脚本有可执行权限
 
@@ -121,6 +135,88 @@ $ chmod +x ingress-ice.sh
 
 如果你没有设置默认的 `$EDITOR` 环境变量的话脚本会使用 `Nano` 作为默认编辑器编辑配置文件，编辑后的配置文件会以隐藏文件的形式被保存在 `$HOME/.ingress-ice.conf`，可以使用 `ingress-ice.sh -r` 或者直接打开来编辑配置文件。
 
+然后请参考本文最后一节的配置解释。
+
+#### 1.3 启动
+
+可用的命令行参数如下，配置好代理即可执行命令。
+
+```bash
+$ ./ingress-ice.sh -h
+
+Ingress ICE
+Usage:
+    ingress-ice.sh [-c 100] [-i settings.txt] [-r]
+    ingress-ice.sh -h | -?
+    ingress-ice.sh -a
+Options:
+    -h -?        Show this help 显示帮助
+    -r           Edit your configuration 编辑配置文件
+    -a           Show authors 显示作者
+    -c <count>   Take <count> screenshots 设置所需截图
+    -i <file>    Read settings from <file> or create config if not exists 读取指定配置文件
+    -o           Delete old config and configure ice from scratch 删除配置文件
+    -s           Run Ingress ICE in an endless loop (it will restart matically after an error) 如果脚本执行过程中崩溃，自动重新开始
+
+    Please visit https://ingress.netlify.com/ for more information
+```
+
+### 2. GIF 或视频制作
+
+## Windows 用户
+
+Windows 下的流程考虑到用户群体普遍未接触过命令行及复杂的配置，教程会尽量使用更多**预先约定好**的配置以降低使用难度。
+
+### 1. 脚本使用
+
+#### 1.1 准备
+
+把[文件准备](#%e6%96%87%e4%bb%b6%e5%87%86%e5%a4%87)里提到下载的 `phantomjs-2.1.1-windows.zip` 解压，得到的文件中，将 `phantomjs-2.1.1-windows/bin/` 下的 `phantomjs.exe` 直接移动到准备好的 `ingress-ice-4.5.6` 文件夹下备用。
+
+因为中国大陆无法直接访问 Ingress Intel，所以需要配置代理。配置方法是用文本编辑器打开 `ingress-ice.cmd` 修改这一行变成这样：
+
+```cmd
+phantomjs.exe --proxy=http://127.0.0.1:1080 --proxy-type=socks5 ice\ice.js %FILE% %COUNT%
+```
+
+到时就会调用 1080 端口的 socks5 代理。其中 `1080` 端口号请根据自己情况来修改。端口号通常可以在你正在使用的代理客户端设置找到。`socks5` 是现在比较常用的代理类型，其他类型请参考下面官方帮助修改。
+
+```powershell
+$ .\phantomjs.exe --help
+
+--proxy=<val>                        Sets the proxy server, e.g. '--proxy=http://proxy.company.com:8080'
+--proxy-auth=<val>                   Provides authentication information for the proxy, e.g. '-proxy-auth=username:password'
+--proxy-type=<val>                   Specifies the proxy type, 'http' (default), 'none' (disable completely), or 'socks5'
+```
+
+#### 1.2 配置
+
+第一次双击 `ingress-ice.cmd` 会弹出配置文件编辑界面。
+
+当你参考文末的配置说明，配置完后，请保存并退出，程序会自动开始第一次截图。
+
+配置文件默认会被保存在 `%APPDATA%\.ingress-ice.conf`，也即是 `C:\Users\你的用户名\AppData\Roaming`，后续可自行打开修改。
+
+
+注意：建议不双击使用 `reconfigure.cmd`，它会直接重置你现有的配置。
+
+#### 1.3 启动
+
+打开文件浏览器，在 `ingress-ice.cmd` 所在目录下按住 Shift 键并在空白处右击，打开 Powershell。Windows 10 之前的系统可能是叫‘命令行窗口’。
+
+![powershell](./images/powershell.png)
+
+输入命令 `.\ingress-ice.cmd -c 4` 即开始截图。
+
+数字 `4` 为需要截图的张数。截图文件默认保存在 ICE 程序所在的下一级 `screenshots` 目录下。
+
+更多使用命令请输入 `.\ingress-ice.cmd -h` 参考。
+
+### 2. GIF 或视频制作
+
+## MacOS 用户
+
+## 配置说明
 
 ```ini
 [ice]
@@ -136,7 +232,7 @@ delay=300000
 # Portals 详细程度
 minlevel=1
 maxlevel=8
-# 截图大小，以像素为单位
+# 截图窗口大小，以像素为单位
 width=1366
 height=768
 # 是否启用 IITC 插件，默认为原版 Intel 地图
@@ -169,7 +265,7 @@ CSRF=
 # 如果你有 Amazon S3 或者 Dropbox 网盘的话可以使用自动上传功能，此略
 ```
 
-**从浏览器获取 Cookies 信息**
+### 从浏览器获取 Cookies 信息
 
 `Cookies` 相较与账户密码来说是一个属于用户的临时凭证，可以免去直接使用账户密码登陆的风险，如 `Cookies` 到期则需要修改配置文件进行更新。
 
@@ -187,36 +283,4 @@ CSRF=
     
     将 `SACSID` 和 `csrftoken` 对应的 `Value` 填入 `ingress-ice.conf` 配置文件中。
 
-**如果获取不到 SACSID**，可以清除该网站在浏览器留下的 `Cookies` 信息并重新登陆获取，此处以 `Chromium` 浏览器为例，`Firefox` 同理。
-
-![cookies](./ice_images/cookies_chromium_clean.png)
-
-#### 3.3 启动
-
-可用的命令行参数如下，配置好代理即可执行命令。
-
-```bash
-$ ./ingress-ice.sh -h
-
-Ingress ICE
-Usage:
-    ingress-ice.sh [-c 100] [-i settings.txt] [-r]
-    ingress-ice.sh -h | -?
-    ingress-ice.sh -a
-Options:
-    -h -?        Show this help 显示帮助
-    -r           Edit your configuration 编辑配置文件
-    -a           Show authors 显示作者
-    -c <count>   Take <count> screenshots 设置所需截图
-    -i <file>    Read settings from <file> or create config if not exists 读取指定配置文件
-    -o           Delete old config and configure ice from scratch 删除配置文件
-    -s           Run Ingress ICE in an endless loop (it will restart matically after an error) 如果脚本执行过程中崩溃，自动重新开始
-
-    Please visit https://ingress.netlify.com/ for more information
-```
-
-### 4. GIF 或视频制作
-
-## Windows 用户
-
-## MacOS 用户
+**如果获取不到 SACSID**，可以打开一个隐身模式的窗口新登录一次 Intel 来获取。
