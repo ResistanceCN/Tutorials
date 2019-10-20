@@ -1,9 +1,0 @@
-#!/bin/sh
-unset GIT_DIR 
-DIR_ONE=/srv/Tutorials/ 
-cd $DIR_ONE
-sudo git init
-sudo git remote add origin /srv/Tutorials/
-sudo git clean -df
-sudo git pull origin master
-sudo systemctl restart mkdocs
