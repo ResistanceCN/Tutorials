@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Git Hook for SwiftLint 
+# Runs at every commit and checks for an error.
+# For the test, you can run `git commit` with an empty` commit message`
+
+export PATH=${PWD}/node_modules/doctoc:$PATH
+
+LINT=$(which doctoc.js)
+
+if [[ -e "${LINT}" ]]; then
+	echo "Doctoc Start..."
+else
+	echo "Doctoc does not exist, install from https://www.npmjs.com/package/doctoc"
+	exit 1
+fi
+
+RESULT=$($LINT .)
+
+if [ "$RESULT" == '' ]; then
+	printf "Doctoc Failed. Please check below:\n"
+	echo "$RESULT"
+	exit 1
+else
+	echo ""
+	printf "Doctoc Finished.\n"
+fi
