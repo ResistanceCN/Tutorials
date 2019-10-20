@@ -45,6 +45,78 @@ Ingress-ICE 是一个能够利用 PhantomJS“浏览器”加载 Intel 地图并
 - [WikiPedia: PhantomJS](https://en.wikipedia.org/wiki/PhantomJS)
 - [WikiPedia: Webkit](https://en.wikipedia.org/wiki/Webkit)
 
+## 配置说明
+
+### 脚本的配置文件
+
+```ini
+[ice]
+# 需要查看的区域地图链接，例如：https://intel.ingress.com/intel?ll=23.056199%2C113.374658&z=15
+area=
+# 个人非常不建议在此使用以 Google 账户密码的方式进行登陆，建议使用现有 cookies 登陆，具体见后
+#login=
+#password=
+
+[ice-optional]
+# 每次截图延迟，以毫秒为单位
+delay=300000
+# Portals 详细程度
+minlevel=1
+maxlevel=8
+# 截图窗口大小，以像素为单位
+width=1366
+height=768
+# 是否启用 IITC 插件，默认为原版 Intel 地图
+iitc=false
+plugins=["https://iitc.modos189.ru/build/release/total-conversion-build.user.js"]
+# 插件配置，以选定地图为例
+pluginsConfig=[{"key":"iitc-base-map","value":"Google Default Ingress Map"}]
+# 第三方插件的链接和配置
+plugins=["https://static.iitc.me/build/release/plugins/link-show-direction.user.js"]
+pluginsConfig=[{"key":"plugin-linkshowdirection-mode","value":"Static near origin"},{"key":"iitc-base-map","value":"Google Roads"}]
+# 是否在地图上标明时间戳和时区信息
+timestamp=true
+timezone=false
+# 可选需要的隐藏信息
+hideRes=false
+hideEnl=false
+hideLink=false
+hideField=false
+# 图片导出格式，jpg 或者 png
+format=png
+# 图片导出目录，默认为项目目录下的 screenshots 文件夹
+directory=screenshots/
+# 日志导出目录，如不需要请留空
+consoleLog=
+
+[cookies]
+# Cookies 信息从浏览器上获得，具体方法见后
+SACSID=
+CSRF=
+
+# 如果你有 Amazon S3 或者 Dropbox 网盘的话可以使用自动上传功能，此略
+```
+
+### 从浏览器获取 Cookies 信息
+
+`Cookies` 相较与账户密码来说是一个属于用户的临时凭证，可以免去直接使用账户密码登陆的风险，如 `Cookies` 到期则需要修改配置文件进行更新。
+
+- 对于 `Firefox` 浏览器
+    正常登陆 `Intel` 之后，从开发者工具 `Storage Inspector`（或者按 `Shift + F9`）中获取 `Cookies`。
+
+    ![cookies](./ice_images/cookies.png)
+    
+    将 `SACSID` 和 `csrftoken` 对应的 `Value` 填入 `ingress-ice.conf` 配置文件中。
+
+- 对于 `Chromium 系`浏览器
+    正常登陆 `Intel` 之后，从开发者工具（`F12` 打开） Application 中获取 `Cookies`。
+    
+    ![cookies](./ice_images/cookies_chromium.png)
+    
+    将 `SACSID` 和 `csrftoken` 对应的 `Value` 填入 `ingress-ice.conf` 配置文件中。
+
+**如果获取不到 SACSID**，可以打开一个隐身模式的窗口新登录一次 Intel 来获取。
+
 ## 文件准备
 
 ### 1. Ingress ICE
@@ -193,7 +265,7 @@ $ .\phantomjs.exe --help
 
 第一次双击 `ingress-ice.cmd` 会弹出配置文件编辑界面。
 
-当你参考文末的配置说明，配置完后，请保存并退出，程序会自动开始第一次截图。
+当你参考开头的配置说明，配置完后，请保存并退出，程序会自动开始第一次截图。
 
 配置文件默认会被保存在 `%APPDATA%\.ingress-ice.conf`，也即是 `C:\Users\你的用户名\AppData\Roaming`，后续可自行打开修改。
 
@@ -216,71 +288,55 @@ $ .\phantomjs.exe --help
 
 ## MacOS 用户
 
-## 配置说明
+### 1. 脚本使用
 
-```ini
-[ice]
-# 需要查看的区域地图链接，例如：https://intel.ingress.com/intel?ll=23.056199%2C113.374658&z=15
-area=
-# 个人非常不建议在此使用以 Google 账户密码的方式进行登陆，建议使用现有 cookies 登陆，具体见后
-#login=
-#password=
+#### 1.1 基本命令行知识
 
-[ice-optional]
-# 每次截图延迟，以毫秒为单位
-delay=300000
-# Portals 详细程度
-minlevel=1
-maxlevel=8
-# 截图窗口大小，以像素为单位
-width=1366
-height=768
-# 是否启用 IITC 插件，默认为原版 Intel 地图
-iitc=false
-# 插件配置，以选定地图为例
-pluginsConfig=[{"key":"iitc-base-map","value":"Google Default Ingress Map"}]
-# 第三方插件的链接和配置
-plugins=["https://static.iitc.me/build/release/plugins/link-show-direction.user.js"]
-pluginsConfig=[{"key":"plugin-linkshowdirection-mode","value":"Static near origin"},{"key":"iitc-base-map","value":"Google Roads"}]
-# 是否在地图上标明时间戳和时区信息
-timestamp=true
-timezone=false
-# 可选需要的隐藏信息
-hideRes=false
-hideEnl=false
-hideLink=false
-hideField=false
-# 图片导出格式，jpg 或者 png
-format=png
-# 图片导出目录，默认为项目目录下的 screenshots 文件夹
-directory=screenshots/
-# 日志导出目录，如不需要请留空
-consoleLog=
+- cd
 
-[cookies]
-# Cookies 信息从浏览器上获得，具体方法见后
-SACSID=
-CSRF=
-
-# 如果你有 Amazon S3 或者 Dropbox 网盘的话可以使用自动上传功能，此略
+```bash
+# 进入下载目录，可输入文件夹开头字母，使用 Tab 补全
+$ cd <路径名称>
 ```
 
-### 从浏览器获取 Cookies 信息
+- ls
 
-`Cookies` 相较与账户密码来说是一个属于用户的临时凭证，可以免去直接使用账户密码登陆的风险，如 `Cookies` 到期则需要修改配置文件进行更新。
+```bash
+# 查看所在目录下的文件，不加路径名称即为查看当前目录
+$ ls <路径名称>
+```
 
-- 对于 `Firefox` 浏览器
-    正常登陆 `Intel` 之后，从开发者工具 `Storage Inspector`（或者按 `Shift + F9`）中获取 `Cookies`。
+- chmod
 
-    ![cookies](./ice_images/cookies.png)
-    
-    将 `SACSID` 和 `csrftoken` 对应的 `Value` 填入 `ingress-ice.conf` 配置文件中。
+```bash
+# 进入下载目录后，为脚本添加可执行权限
+$ chmod +x ingress-ice.sh
+```
 
-- 对于 `Chromium 系`浏览器
-    正常登陆 `Intel` 之后，从开发者工具（`F12` 打开） Application 中获取 `Cookies`。
-    
-    ![cookies](./ice_images/cookies_chromium.png)
-    
-    将 `SACSID` 和 `csrftoken` 对应的 `Value` 填入 `ingress-ice.conf` 配置文件中。
+- sh
 
-**如果获取不到 SACSID**，可以打开一个隐身模式的窗口新登录一次 Intel 来获取。
+```bash
+# 执行脚本文件，也可以在脚本拥有可执行权限后直接在目录下执行 ./ingress-ice.sh
+$ sh -c ingress-ice.sh
+```
+
+#### 1.2 配置
+将 `PhantomJS` 和 `ingress-ice` 下载并解压到同一个文件目录内
+
+按开头的配置说明获取 cookies 并修改好脚本运行所需的配置文件
+
+配置默认使用的是 `nano` 编辑器，下面列出一些基本快捷键：
+
+- Ctrl + O 保存
+- Ctrl + W 退出
+- 方向键移动光标
+- 右键复制粘贴，或者 Command + Shift + V
+
+#### 1.3 启动
+
+```bash
+# 具体参数意义请见 Linux 启动部分，或者 -h 查看帮助
+$./ingress-ice.sh -c <要截图的数量>
+```
+
+### 2. GIF 或视频制作
