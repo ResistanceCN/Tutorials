@@ -4,6 +4,9 @@
 
 - [ingress ICE 教程](#ingress-ice-%E6%95%99%E7%A8%8B)
   - [简介](#%E7%AE%80%E4%BB%8B)
+  - [配置说明](#%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E)
+    - [脚本的配置文件](#%E8%84%9A%E6%9C%AC%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+    - [从浏览器获取 Cookies 信息](#%E4%BB%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E8%8E%B7%E5%8F%96-cookies-%E4%BF%A1%E6%81%AF)
   - [文件准备](#%E6%96%87%E4%BB%B6%E5%87%86%E5%A4%87)
     - [1. Ingress ICE](#1-ingress-ice)
     - [2. PhantomJS](#2-phantomjs)
@@ -20,8 +23,11 @@
       - [1.3 启动](#13-%E5%90%AF%E5%8A%A8-1)
     - [2. GIF 或视频制作](#2-gif-%E6%88%96%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C-1)
   - [MacOS 用户](#macos-%E7%94%A8%E6%88%B7)
-  - [配置说明](#%E9%85%8D%E7%BD%AE%E8%AF%B4%E6%98%8E)
-    - [从浏览器获取 Cookies 信息](#%E4%BB%8E%E6%B5%8F%E8%A7%88%E5%99%A8%E8%8E%B7%E5%8F%96-cookies-%E4%BF%A1%E6%81%AF)
+    - [1. 脚本使用](#1-%E8%84%9A%E6%9C%AC%E4%BD%BF%E7%94%A8-2)
+      - [1.1 基本命令行知识](#11-%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9F%A5%E8%AF%86)
+      - [1.2 配置](#12-%E9%85%8D%E7%BD%AE-2)
+      - [1.3 启动](#13-%E5%90%AF%E5%8A%A8-2)
+    - [2. GIF 或视频制作](#2-gif-%E6%88%96%E8%A7%86%E9%A2%91%E5%88%B6%E4%BD%9C-2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
